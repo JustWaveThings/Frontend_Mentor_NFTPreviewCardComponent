@@ -1,9 +1,22 @@
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap');
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-      text-decoration: none;
-    }
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+footer {
+  position: absolute;
+  bottom: 15px;
+  align-self: center;
+}
+
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  text-decoration: none;
+}
