@@ -25,17 +25,65 @@ body {
   padding: 1.5em;
   background-color: hsl(216, 50%, 16%);
   border-radius: 15px;
+  
+ 
 }
 
-.main-image{
-  flex: 1 1 0;
+.hover-cont{
+  display: flex;
+  flex: 1 0 0;
   object-fit: contain;
   overflow: hidden;
-  
+  position: relative;
 }
 
+.main-image {
+  cursor: pointer;
+
+}
+
+.on-hover-main,
+.on-hover-submain {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 12%;
+  width: 12%;
+  opacity: 0;
+  transition: 1s ease-in-out;
+  cursor: pointer;
+}
+
+
+
+.on-hover-submain{
+  height: 100%;
+  width: 100%;
+  background-color: hsla(178, 100%, 50%, 0.355);
+
+}
+
+.hover-cont:hover .on-hover-submain {
+  opacity: 1;
+}
+.hover-cont:hover .on-hover-main {
+  opacity: 1;
+}
+
+.title:hover,
+.author:hover {
+  color: hsl(178, 100%, 50%);
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}
+
+
+
 .text-cont {
-  flex: 1 1 0;
+  flex: 1 0 0;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
