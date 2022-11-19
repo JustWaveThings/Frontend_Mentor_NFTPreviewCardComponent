@@ -38,21 +38,25 @@ body {
   flex: 1 1 0;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 
-h1 {
+.title{
   font-size: 1.25em;
   font-weight: 600;
+  margin-top: 1em;
+
 
 }
 
 .price-time-cont {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .price-cont, 
-.author-cont {
+.author-cont{
   display: flex;
 }
 
@@ -68,16 +72,19 @@ h1 {
 
 .time-cont {
   display: flex;
-  align-self: flex-end;
+  align-items: center;
+  justify-content: flex-end;
   margin-left: auto;
 }
 
 .description, 
-h1, 
+.title, 
 .author-cont,
-.price-time-cont
+.price-time-cont,
+.price-cont,
+.time-cont
 {
-  flex: 1 1 0;
+  flex: 1 1 1;
 }
 
 .description,
@@ -108,7 +115,7 @@ h1,
   margin-right: .75em;
 }
 
-.author, h1{
+.author, .title{
   text-decoration: none;
   color:hsl(0, 0%, 100%);
 }
